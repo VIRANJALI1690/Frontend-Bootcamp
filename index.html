@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Frontend Bootcamp</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous" />
+
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css" />
+    <!--style.css file-->
+   <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg bg-dark navbar-dark py-3 fixed-top shadow-sm">
+        <div class="container">
+            <a href="#top" class="navbar-brand"><i class="bi bi-code-square fa"></i><span class="title">Frontend Bootcamp</span></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu"
+                aria-controls="navmenu" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navmenu">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a href="#learn-fundamentals" class="nav-link">What You'll Learn</a></li>
+                    <li class="nav-item"><a href="#Questions" class="nav-link">Questions</a></li>
+                    <li class="nav-item"><a href="#instructors" class="nav-link">Instructors</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main id="top">
+        <!-- Hero / Showcase Section -->
+        <header class="bg-dark text-light p-5 text-center text-sm-start">
+            <div class="container">
+                <div class="d-sm-flex align-items-center justify-content-between">
+                    <div>
+                        <h1>Become a <span class="text-warning">Web Developer</span></h1>
+                        <p class="lead my-4">
+                            Learn the latest frontend technologies, practice with real-world projects, and start your
+                            journey to become
+                            a professional web developer.
+                        </p>
+                        <a href="#learn-fundamentals" class="btn btn-primary btn-lg">Start The Enrollment</a>
+                    </div>
+                    <img class="img-fluid w-50 d-none d-sm-block" src="img/showcase.svg" alt="Showcase illustration" />
+                </div>
+            </div>
+        </header>
+
+        <!-- Newsletter -->
+        <section class="bg-primary text-light p-5">
+            <div class="container">
+                <div class="d-md-flex justify-content-between align-items-center">
+                    <h3 class="mb-3 md-md-0">Sign Up For Our Courses</h3>
+                    <form class="input-group news-input needs-validation" novalidate>
+                        <input type="email" class="form-control" placeholder="Enter your email"
+                            aria-label="Email address" required />
+                        <button class="btn btn-dark btn-lg" type="submit">Submit</button>
+                        <div class="invalid-feedback">Please enter a valid email address.</div>
+                    </form>
+                </div>
+                <div aria-live="polite" class="mt-2" id="newsletter-feedback" role="alert" style="min-height: 1.5em;">
+                </div>
+            </div>
+        </section>
+
+        <!-- Learning Modes -->
+        <section class="p-5">
+            <div class="container">
+                <div class="row text-center g-4">
+                    <div class="col-md">
+                        <div class="card bg-dark text-light h-100">
+                            <div class="card-body text-center">
+                                <div class="h1 mb-3"><i class="bi bi-laptop"></i></div>
+                                <h3 class="card-title mb-3">Virtual</h3>
+                                <p class="card-text">Learn from anywhere with interactive online classes guided by
+                                    expert mentors.</p>
+                                <a href="#" class="btn btn-primary">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md">
+                        <div class="card bg-secondary text-light h-100">
+                            <div class="card-body text-center">
+                                <div class="h1 mb-3"><i class="bi bi-person-square"></i></div>
+                                <h3 class="card-title mb-3">Hybrid</h3>
+                                <p class="card-text">Combine flexible online learning with engaging in-person sessions.
+                                </p>
+                                <a href="#" class="btn btn-dark">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md">
+                        <div class="card bg-dark text-light h-100">
+                            <div class="card-body text-center">
+                                <div class="h1 mb-3"><i class="bi bi-people"></i></div>
+                                <h3 class="card-title mb-3">In Person</h3>
+                                <p class="card-text">Attend classroom sessions with live mentorship and collaborative
+                                    learning.</p>
+                                <a href="#" class="btn btn-primary">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Learn Sections -->
+        <section id="learn-fundamentals" class="p-5">
+            <div class="container">
+                <div class="row align-items-center justify-content-between">
+                    <div class="col-md">
+                        <img src="img/fundamentals.svg" class="img-fluid" alt="Web development fundamentals" />
+                    </div>
+                    <div class="col-md p-5">
+                        <h2>Learn The Fundamentals</h2>
+                        <p class="lead">Frontend Fundamentals are the building blocks of web development that shape what
+                            users see
+                            and interact with.</p>
+                        <p>They include HTML for structure, CSS for design, and JavaScript for functionality. Mastering
+                            these basics
+                            helps you create responsive, user-friendly websites that bring ideas to life on the browser.
+                        </p>
+                        <a href="#" class="btn btn-light mt-3"><i class="bi bi-chevron-right"></i> Read More</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="learn-react" class="p-5 bg-dark text-light">
+            <div class="container">
+                <div class="row align-items-center justify-content-between">
+                    <div class="col-md p-5">
+                        <h2>Learn React</h2>
+                        <p class="lead">React.js is a powerful JavaScript library created by Facebook that makes
+                            building modern
+                            websites easier and faster.</p>
+                        <p>With reusable components and a virtual DOM, React ensures smooth performance, making it a
+                            favorite for
+                            developers worldwide.</p>
+                        <a href="#" class="btn btn-light mt-3"><i class="bi bi-chevron-right"></i> Read More</a>
+                    </div>
+                    <div class="col-md">
+                        <img src="img/react.svg" class="img-fluid" alt="React logo illustration" />
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ -->
+        <section id="Questions" class="p-5">
+            <div class="container">
+                <h2 class="text-center mb-4">Frequently Asked Questions</h2>
+                <div class="accordion accordion-flush" id="faqAccordion">
+                    <!--Question  1-->
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingOne">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#question-one" aria-expanded="false" aria-controls="question-one">
+                                1. What is frontend development?
+                            </button>
+                        </h2>
+                        <div id="question-one" class="accordion-collapse collapse" aria-labelledby="headingOne"
+                            data-bs-parent="#faqAccordion">
+                            <div class="accordion-body">Frontend development is all about creating the part of a website
+                                that users see and interact with. It involves designing layouts, adding styles, and making
+                                things work smoothly in the browser using technologies like HTML, CSS, and JavaScript.</div>
+                        </div>
+                    </div>
+                    <!--Question  2-->
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingTwo">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#question-two" aria-expanded="false" aria-controls="question-two">
+                                2. Which languages are used in frontend?
+                            </button>
+                        </h2>
+                        <div id="question-two" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                            data-bs-parent="#faqAccordion">
+                            <div class="accordion-body">The three main building blocks are HTML, which gives structure, CSS,
+                                which adds design and colors, and JavaScript, which makes things interactive. Together, they
+                                create user-friendly and attractive web pages.</div>
+                        </div>
+                    </div>
+                    <!--Question 3-->
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingThree">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#question-Three" aria-expanded="false" aria-controls="question-Three">
+                                3. What is the difference between frontend and backend?
+                            </button>
+                        </h2>
+                        <div id="question-Three" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                            data-bs-parent="#faqAccordion">
+                            <div class="accordion-body">Frontend is the visible part of a website—what users see and use.
+                                Backend is the behind-the-scenes part, like databases and servers, that makes everything
+                                work. Think of frontend as the shop display and backend as the storage room.</div>
+                        </div>
+                    </div>
+                    <!--Question  4-->
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingFour">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#question-Four" aria-expanded="false" aria-controls="question-Four">
+                                4. Why is responsive design important?
+                            </button>
+                        </h2>
+                        <div id="question-Four" class="accordion-collapse collapse" aria-labelledby="headingFour"
+                            data-bs-parent="#faqAccordion">
+                            <div class="accordion-body">Responsive design makes sure a website looks good on all
+                                devices—from big desktop screens to small mobile phones. It improves user experience and
+                                ensures that everyone can use your site easily, no matter their device.</div>
+                        </div>
+                    </div>
+                    <!--Question 5-->
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingFive">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#question-Five" aria-expanded="false" aria-controls="question-Five">
+                                5. What are frontend frameworks and libraries?
+                            </button>
+                        </h2>
+                        <div id="question-Five" class="accordion-collapse collapse" aria-labelledby="headingFive"
+                            data-bs-parent="#faqAccordion">
+                            <div class="accordion-body">Frameworks and libraries like React, Angular, and Vue make
+                                development faster and easier. They provide pre-built tools and structures so developers
+                                don’t have to start from scratch, helping to create modern and dynamic websites efficiently.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Instructors -->
+        <section id="instructors" class="p-5 bg-primary">
+            <div class="container">
+                <h2 class="text-center text-white">Our Instructors</h2>
+                <p class="lead text-center text-white mb-5">Our instructors all have 5+ years of experience as Web
+                    Developers in
+                    the IT industry.</p>
+                <div class="row g-4">
+                    <div class="col-md-6 col-lg-3">
+                        <div class="card bg-light">
+                            <div class="card-body text-center">
+                                <img src="https://randomuser.me/api/portraits/men/10.jpg" class="rounded-circle mb-3"
+                                    alt="Portrait of Om Modi" />
+                                <h3 class="card-title mb-3">Om Modi</h3>
+                                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni,
+                                    unde?
+                                </p>
+                                <a href="#" rel="noopener noreferrer" aria-label="Twitter"><i
+                                        class="bi bi-twitter text-dark mx-1" title="Twitter"></i></a>
+                                <a href="#" rel="noopener noreferrer" aria-label="Facebook"><i
+                                        class="bi bi-facebook text-dark mx-1" title="Facebook"></i></a>
+                                <a href="#" rel="noopener noreferrer" aria-label="LinkedIn"><i
+                                        class="bi bi-linkedin text-dark mx-1" title="LinkedIn"></i></a>
+                                <a href="#" rel="noopener noreferrer" aria-label="Instagram"><i
+                                        class="bi bi-instagram text-dark mx-1" title="Instagram"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-lg-3">
+                        <div class="card bg-light">
+                            <div class="card-body text-center">
+                                <img src="https://randomuser.me/api/portraits/women/11.jpg" class="rounded-circle mb-3"
+                                    alt="Portrait of Viranjali Game" />
+                                <h3 class="card-title mb-3">Viranjali Game </h3>
+                                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni,
+                                    unde?
+                                </p>
+                                <a href="#" rel="noopener noreferrer" aria-label="Twitter"><i
+                                        class="bi bi-twitter text-dark mx-1" title="Twitter"></i></a>
+                                <a href="#" rel="noopener noreferrer" aria-label="Facebook"><i
+                                        class="bi bi-facebook text-dark mx-1" title="Facebook"></i></a>
+                                <a href="#" rel="noopener noreferrer" aria-label="LinkedIn"><i
+                                        class="bi bi-linkedin text-dark mx-1" title="LinkedIn"></i></a>
+                                <a href="#" rel="noopener noreferrer" aria-label="Instagram"><i
+                                        class="bi bi-instagram text-dark mx-1" title="Instagram"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-lg-3">
+                        <div class="card bg-light">
+                            <div class="card-body text-center">
+                                <img src="https://randomuser.me/api/portraits/men/13.jpg" class="rounded-circle mb-3"
+                                    alt="Portrait of Harsh Mehta" />
+                                <h3 class="card-title mb-3">Harshad Mehta</h3>
+                                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni,
+                                    unde?
+                                </p>
+                                <a href="#" rel="noopener noreferrer" aria-label="Twitter"><i
+                                        class="bi bi-twitter text-dark mx-1" title="Twitter"></i></a>
+                                <a href="#" rel="noopener noreferrer" aria-label="Facebook"><i
+                                        class="bi bi-facebook text-dark mx-1" title="Facebook"></i></a>
+                                <a href="#" rel="noopener noreferrer" aria-label="LinkedIn"><i
+                                        class="bi bi-linkedin text-dark mx-1" title="LinkedIn"></i></a>
+                                <a href="#" rel="noopener noreferrer" aria-label="Instagram"><i
+                                        class="bi bi-instagram text-dark mx-1" title="Instagram"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-lg-3">
+                        <div class="card bg-light">
+                            <div class="card-body text-center">
+                                <img src="https://randomuser.me/api/portraits/women/12.jpg" class="rounded-circle mb-3"
+                                    alt="Portrait of Saee Kapoor" />
+                                <h3 class="card-title mb-3">Saee Kapoor</h3>
+                                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni,
+                                    unde?
+                                </p>
+                                <a href="#" rel="noopener noreferrer" aria-label="Twitter"><i
+                                        class="bi bi-twitter text-dark mx-1" title="Twitter"></i></a>
+                                <a href="#" rel="noopener noreferrer" aria-label="Facebook"><i
+                                        class="bi bi-facebook text-dark mx-1" title="Facebook"></i></a>
+                                <a href="#" rel="noopener noreferrer" aria-label="LinkedIn"><i
+                                        class="bi bi-linkedin text-dark mx-1" title="LinkedIn"></i></a>
+                                <a href="#" rel="noopener noreferrer" aria-label="Instagram"><i
+                                        class="bi bi-instagram text-dark mx-1" title="Instagram"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="p-4 mt-5 text-center text-md-start">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 mb-3">
+                    <h5>Frontend Bootcamp</h5>
+                    <p>Learn, practice, and build modern web development skills with industry experts.</p>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <h5>Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#learn-fundamentals">Fundamentals</a></li>
+                        <li><a href="#learn-react">React</a></li>
+                        <li><a href="#Questions">FAQ</a></li>
+                        <li><a href="#instructors">Instructors</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <h5>Contact Us</h5>
+                    <p><i class="bi bi-envelope"></i> gameviranjali1690@gmail.com</p>
+                    <p><i class="bi bi-telephone"></i> +91 1234567891</p>
+                    <div>
+                        <a href="#"><i class="bi bi-twitter text-light mx-1"></i></a>
+                        <a href="#"><i class="bi bi-facebook text-light mx-1"></i></a>
+                        <a href="#"><i class="bi bi-linkedin text-light mx-1"></i></a>
+                        <a href="#"><i class="bi bi-instagram text-light mx-1"></i></a>
+                    </div>
+                </div>
+            </div>
+            <hr class="bg-light" />
+            <p class="text-center mb-0">&copy; 2025 Frontend Bootcamp. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Back to top button -->
+    <button id="backToTop"><i class="bi bi-arrow-up"></i></button>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
